@@ -28,16 +28,10 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        goToSignUp = findViewById(R.id.goToSignUp);
         email = findViewById(R.id.EmailSignIn);
         password = findViewById(R.id.PasswordSignIn);
         signIn = findViewById(R.id.SignInButton);
-        goToSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginScreen.this, RegisterScreen.class));
-            }
-        });
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

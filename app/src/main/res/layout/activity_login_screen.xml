@@ -34,15 +34,6 @@
             android:inputType="textPersonName"
             android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/goToSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:text="Зарегистрироваться"
-            android:textSize="12sp" />
-
         <Button
             android:id="@+id/SignInButton"
             android:layout_width="match_parent"

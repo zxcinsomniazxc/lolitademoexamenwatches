@@ -19,7 +19,7 @@ public class StartScreen extends AppCompatActivity {
             @Override
             public void run() {
                 boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun", true);
-                if(firstRun) { getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("firstRun", false).apply(); Intent intent = new Intent(StartScreen.this, RegisterScreen.class); startActivity(intent); }
+                if(firstRun) { getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("firstRun", false).apply(); Intent intent = new Intent(StartScreen.this, LoginScreen.class); startActivity(intent); }
                 else { Intent intent = new Intent(StartScreen.this, LoginScreen.class); startActivity(intent); }
             }
         };
